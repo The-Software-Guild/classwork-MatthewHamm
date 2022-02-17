@@ -33,7 +33,7 @@ public class SummativeSums {
         Scanner myScanner=new Scanner(System.in);
       
         
-        String[] strArray=myScanner.next().replace("{", " ").replace("}", " ").replace("\n", "").split(",");
+        String[] strArray=myScanner.useDelimiter("}").next().replace("{", " ").replace("}", " ").split(",");
         int[] array=new int[strArray.length];
         for(int i=0; strArray.length>i;i++){
             System.out.println(strArray[i].trim());
